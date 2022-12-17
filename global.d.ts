@@ -4,7 +4,8 @@ interface StructureItem {
   group: string
   props: {
     [key: string]: any
-  }
+  },
+  children?: StructureItem[]
 }
 
 interface StructureComponent {
@@ -12,8 +13,15 @@ interface StructureComponent {
   name: string
   props?: {
     [key: string]: {
-      type: 'string' | 'number' | 'boolean' | 'textarea'
+      type: 'string' | 'number' | 'boolean' | 'textarea' | 'select'
       default: any
+      options?: any[]
     }
   }
+  allowChildren?: boolean
+  display: 'block' | 'inline' | 'inline-block'
+  hooks?: {
+    event: 'onParse'
+    callback: (...args: any[]) => any
+  }[]
 }

@@ -252,7 +252,7 @@ onBeforeUnmount(() => {
       </div>
       <div class="flex-1 flex overflow-hidden">
         <!-- panel::left -->
-        <div class="flex flex-col border-r border-slate-800" :style="{ width: '300px' }">
+        <div class="flex flex-col border-r border-slate-800" :style="{ width: '280px' }">
           <StructurePanelListStruct
             :structure-item-selected="structureItemSelected"
             :structures="structures"
@@ -301,7 +301,7 @@ onBeforeUnmount(() => {
           </div>
         </div>
         <!-- panel::right -->
-        <div class="border-l flex flex-col divide-y divide-slate-800 border-slate-800" :style="{ width: '300px' }">
+        <div class="border-l flex flex-col divide-y divide-slate-800 border-slate-800" :style="{ width: '280px' }">
           <div class="flex-1 overflow-hidden">
             <div class="font-bold px-4 py-3 bg-slate-900/50 border-b border-slate-800">Components</div>
             <div class="flex-1 max-h-full overflow-y-auto">
